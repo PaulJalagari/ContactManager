@@ -1,4 +1,4 @@
-package com.howtodoinjava.service;
+package com.contacts.service;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.howtodoinjava.dao.EmployeeDAO;
-import com.howtodoinjava.entity.EmployeeEntity;
+import com.contacts.dao.EmployeeDAO;
+import com.contacts.entity.EmployeeEntity;
 
 @Service
 public class EmployeeManagerImpl implements EmployeeManager {

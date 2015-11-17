@@ -1,4 +1,4 @@
-package com.howtodoinjava.dao;
+package com.contacts.dao;
 
 import java.util.List;
 

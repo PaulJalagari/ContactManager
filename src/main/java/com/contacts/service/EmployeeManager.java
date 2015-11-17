@@ -1,8 +1,8 @@
-package com.howtodoinjava.service;
+package com.contacts.service;
 
 import java.util.List;
 
-import com.howtodoinjava.entity.EmployeeEntity;
+import com.contacts.entity.EmployeeEntity;
 
 public interface EmployeeManager {
 	public void addEmployee(EmployeeEntity employee);
