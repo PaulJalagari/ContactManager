@@ -8,8 +8,8 @@
 	http://www.springframework.org/schema/security/spring-security-3.0.3.xsd">
 	
 	<global-method-security>
-		<protect-pointcut expression="execution(* com.howtodoinjava.service.*Impl.add*(..))" access="ROLE_USER"/>
-		<protect-pointcut expression="execution(* com.howtodoinjava.service.*Impl.delete*(..))" access="ROLE_ADMIN"/>
+		<protect-pointcut expression="execution(* com.contacts.service.*Impl.add*(..))" access="ROLE_USER"/>
+		<protect-pointcut expression="execution(* com.contacts.service.*Impl.delete*(..))" access="ROLE_ADMIN"/>
 	</global-method-security>
 	
 	<http auto-config="false"  use-expressions="true">
@@ -24,13 +24,13 @@
 	<authentication-manager alias="authenticationManager">
         <authentication-provider>
             <user-service>
-                <user name="lokesh" password="password" authorities="ROLE_USER" />
+                <user name="paul" password="password" authorities="ROLE_USER" />
                 <user name="admin" password="password" authorities="ROLE_USER,ROLE_ADMIN" />
             </user-service>
         </authentication-provider>
     </authentication-manager>
     
-    <beans:bean id="employeeDAO" class="com.howtodoinjava.dao.EmployeeDaoImpl" />
-    <beans:bean id="employeeManager" class="com.howtodoinjava.service.EmployeeManagerImpl" />
+    <beans:bean id="employeeDAO" class="com.contacts.dao.EmployeeDaoImpl" />
+    <beans:bean id="employeeManager" class="com.contacts.service.EmployeeManagerImpl" />
     
 </beans:beans>

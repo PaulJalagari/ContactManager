@@ -17,7 +17,7 @@
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
  
     <context:annotation-config />
-    <context:component-scan base-package="com.howtodoinjava.controller" />
+    <context:component-scan base-package="com.contacts.controller" />
  
     <bean id="jspViewResolver"
         class="org.springframework.web.servlet.view.InternalResourceViewResolver">
