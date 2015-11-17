@@ -6,7 +6,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.howtodoinjava.entity.EmployeeEntity;
+import com.contacts.entity.EmployeeEntity;
 
 @Repository
 public class EmployeeDaoImpl implements EmployeeDAO  {

@@ -2,7 +2,7 @@ package com.contacts.dao;
 
 import java.util.List;
 
-import com.howtodoinjava.entity.EmployeeEntity;
+import com.contacts.entity.EmployeeEntity;
 
 public interface EmployeeDAO 
 {

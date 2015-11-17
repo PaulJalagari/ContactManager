@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.howtodoinjava.entity.EmployeeEntity;
-import com.howtodoinjava.service.EmployeeManager;
+import com.contacts.entity.EmployeeEntity;
+import com.contacts.service.EmployeeManager;
 
 @Controller
 public class EditEmployeeController {
