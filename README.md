@@ -1,2 +1,2 @@
 # ContactManager
-A Contacts Manger designed using Spring3 and Spring Security.
+A Contacts Manger designed using Spring3,Spring Security and Hibernate.
