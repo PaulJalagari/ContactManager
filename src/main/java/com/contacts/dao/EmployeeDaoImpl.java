@@ -14,9 +14,7 @@ public class EmployeeDaoImpl implements EmployeeDAO  {
 	@Autowired
     private SessionFactory sessionFactory;
 	
-	//@PreAuthorize("hasRole('ROLE_USER')")
 	public void addEmployee(EmployeeEntity employee) {
-		//System.out.println(((User)SecurityContextHolder.getContext().getAuthentication().getPrincipal()).getAuthorities());
 		this.sessionFactory.getCurrentSession().save(employee);
 	}
 
@@ -24,8 +22,7 @@ public class EmployeeDaoImpl implements EmployeeDAO  {
 	public List<EmployeeEntity> getAllEmployees() {
 		return this.sessionFactory.getCurrentSession().createQuery("from Employee").list();
 	}
-
-	//@PreAuthorize("hasRole('ROLE_ADMIN')")
+	
 	public void deleteEmployee(Integer employeeId) {
 		EmployeeEntity employee = (EmployeeEntity) sessionFactory.getCurrentSession().load(
 				EmployeeEntity.class, employeeId);
